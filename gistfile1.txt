@@ -1,0 +1,14 @@
+var options = {
+  host : 'localhost',
+  port : 4000,
+  path : '/documents',
+  method : 'POST',
+  encoding : 'utf8'
+}
+
+//supply a cookie if you want
+var cookie
+
+upload.postFile(options, '/path/to/some/file.txt', {'Cookie': cookie}, function() {
+   console.log(arguments) // file should be posted
+})
